@@ -1,0 +1,5 @@
+# Jetbrains IDE cache files
+.idea/
+
+# macOS metadata files
+.DS_Store
