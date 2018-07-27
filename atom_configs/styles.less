@@ -1,0 +1,37 @@
+/**
+ * Text editor styles
+ */
+atom-workspace {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Fira Code";
+  font-size: 14px;
+}
+
+atom-text-editor {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Operator Mono";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+atom-text-editor.editor {
+  .syntax--keyword.syntax--operator,
+  .syntax--storage.syntax--type.syntax--function.syntax--arrow.syntax--js {
+    font-family: 'Fira Code Light';
+  }
+}
+
+atom-text-editor.editor .syntax--comment {
+  font-family: "Operator Mono Light";
+  font-style: italic;
+}
+
+atom-text-editor.editor {
+  .syntax--string.syntax--quoted,
+  .syntax--string.syntax--regexp {
+    -webkit-font-feature-settings: "liga" off, "calt" off;
+  }
+}
