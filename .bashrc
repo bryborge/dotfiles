@@ -30,7 +30,7 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
- # Load bash_aliases.
+# Load bash_aliases.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
