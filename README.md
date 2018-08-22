@@ -1,4 +1,4 @@
-# Linux Config
+# Linux Dotfiles
 
 My linux config files.
 
@@ -19,9 +19,9 @@ just trust that it's genius.
 
 ### Get Started
 
-1. Clone this repo down to your code directory: `/home/user_name/code/`
-1. Look at the contents of `scripts/gen_symlinks` **BEFORE** running it. Don't be a n00b.
-1. Run `$ bash scripts/gen_symlinks`
+1. Clone this repo down to your code directory: `/home/username/code/`
+1. Look at the contents of `scripts/gen_symlinks.sh` **BEFORE** running it. Don't be a n00b.
+1. Run `$ bash scripts/gen_symlinks.sh`
 1. Bask in the glory
 
 ### Tracking New Files
@@ -35,4 +35,3 @@ Currently the process is:
 ### Configure Atom
 
 There are some configs in `atom_configs` that need to be added manually to the editor.
-

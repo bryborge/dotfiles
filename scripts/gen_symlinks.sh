@@ -34,7 +34,7 @@ create_config_bkup() {
 # Lastly, do the mothafuckin' thing!
 #
 ftw() {
-  ln -s ~/code/dotfiles_linux/$1 ~/$1
+  ln -s ~/code/linux-dotfiles/$1 ~/$1
   echo "    \"~/$1\" symlink created!"
 }
 
