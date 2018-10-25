@@ -88,13 +88,13 @@ PROMPT_COMMAND=set_bash_prompt
 
 # Set the bash prompt output and color
 function set_bash_prompt() {
-    PS1="$(get_venv_name_with_color)${CYAN}\u${NO_COLOR}@${GREEN}\h${NO_COLOR}:${BOLD_YELLOW}\w${RED}$(__git_ps1 " (%s)")${NO_COLOR}\n[\t] $ "
+    PS1="$(get_venv_name_with_color)${BOLD_CYAN}\u${NO_COLOR}@${BOLD_GREEN}\h${NO_COLOR}:${BOLD_YELLOW}\w${BOLD_RED}$(__git_ps1 " (%s)")${NO_COLOR}\n[\t] $ "
 }
 
 # Set the virtual environment name and color
 function get_venv_name_with_color() {
     if [[ ! -z "$VIRTUAL_ENV" ]]; then
-        echo "${PURPLE}(${VIRTUAL_ENV##*/})${NO_COLOR} "
+        echo "${BOLD_PURPLE}(${VIRTUAL_ENV##*/})${NO_COLOR} "
     fi
 }
 
