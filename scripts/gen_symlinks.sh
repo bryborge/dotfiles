@@ -82,6 +82,7 @@ dot_your_eyes() {
 # Start the mothafuckin' magic ...
 #
 start() {
+  dot_your_eyes .atom/styles.less
   dot_your_eyes .bash_aliases
   dot_your_eyes .bashrc
   dot_your_eyes .gitcompletion
