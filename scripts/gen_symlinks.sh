@@ -11,7 +11,7 @@ cleanup_aisle_five() {
   read -p "        Enter [y/n]: " opt
 
   if [[ "y" == $opt ]]; then
-    rm -rf ~/config_bkup
+    rm -rf ~/config_bak
   else
     printf "\n"
     echo "    Cool beans. You're all set. \o/"
@@ -20,12 +20,12 @@ cleanup_aisle_five() {
 
 
 #
-# Create ~/config_bkup dir if it doesn't already exist, 'cause we may need that
+# Create ~/config_bak dir if it doesn't already exist, 'cause we may need that
 # shit.
 #
-create_config_bkup() {
-  if [ ! -d ~/config_bkup ]; then
-    mkdir ~/config_bkup
+create_config_bak() {
+  if [ ! -d ~/config_bak ]; then
+    mkdir ~/config_bak
   fi
 }
 
@@ -47,9 +47,9 @@ cross_your_tease() {
   if [[ "i" == $1 ]]; then
     echo "    Ignoring. Proceed ..."
   elif [[ "b" == $1 ]]; then
-    create_config_bkup
-    mv ~/$2 ~/config_bkup
-    echo "    backup created in \"~/config_bkup/$2\""
+    create_config_bak
+    mv ~/$2 ~/config_bak
+    echo "    backup created in \"~/config_bak/$2\""
   elif [[ "d" == $1 ]]; then
     rm ~/$2
     echo "    \"~/$2\" was destroyed."
