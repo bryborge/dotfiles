@@ -13,10 +13,5 @@ alias ls='ls --color=auto'
 #
 # PROJECTS
 #
-# alias sites='cd /var/www/html'
-
-
-#
-# TERMINUS
-#
-# alias terminus='~/terminus/bin/terminus'
+alias code='pushd ~/code'
+alias notes='pushd ~/notes'
