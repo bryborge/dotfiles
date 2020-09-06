@@ -2,10 +2,9 @@
 
 set -euo pipefail
 
-
-#
+##
 # Prompt user to remove all that config backup bullshit.
-#
+
 cleanup_aisle_five() {
   echo "    Want to remove your backups now?"
   read -p "        Enter [y/n]: " opt
@@ -18,31 +17,28 @@ cleanup_aisle_five() {
   fi
 }
 
-
-#
+##
 # Create ~/config_bak dir if it doesn't already exist, 'cause we may need that
 # shit.
-#
+
 create_config_bak() {
   if [ ! -d ~/config_bak ]; then
     mkdir ~/config_bak
   fi
 }
 
-
-#
+##
 # Lastly, do the mothafuckin' thing!
-#
+
 ftw() {
   ln -s ~/code/linux-dotfiles/$1 ~/$1
   echo "    \"~/$1\" symlink created!"
 }
 
-
-#
+##
 # Second, actually backup, destroy, or ignore that mothafucka and let user know
 # what the fuck they just did.
-#
+
 cross_your_tease() {
   if [[ "i" == $1 ]]; then
     echo "    Ignoring. Proceed ..."
@@ -59,10 +55,10 @@ cross_your_tease() {
 }
 
 
-#
+##
 # First, life is about options. Check if user wants to backup, destroy or ignore
 # that mothafucka.
-#
+
 dot_your_eyes() {
   printf "\n"
 
@@ -78,11 +74,10 @@ dot_your_eyes() {
 }
 
 
-#
-# Start the mothafuckin' magic ...
+##
+# Do the mothafuckin' magic ...
 #
 start() {
-  dot_your_eyes .atom/styles.less
   dot_your_eyes .bash_aliases
   dot_your_eyes .bashrc
   dot_your_eyes .gitcompletion

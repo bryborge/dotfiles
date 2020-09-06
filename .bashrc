@@ -1,5 +1,5 @@
-#
-# UBUNTU DEFAULTS (CUSTOMIZED)
+##
+# Ubuntu Defaults (customized)
 #
 
 # If not running interactively, don't do anything.
@@ -45,11 +45,9 @@ if ! shopt -oq posix; then
 fi
 
 
+##
+# Prompt Customization
 #
-# PROMPT CUSTOMIZATION
-#
-
-# COLOR DEFINITIONS
 
 # Regular
 NO_COLOR=$(echo -en '\033[00m')
@@ -98,31 +96,18 @@ function get_venv_name_with_color() {
     fi
 }
 
-
-#
-# RUBY
-#
-
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-
-#
-# JAVASCRIPT
-#
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+# nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
 
 
-#
-# MISC
+##
+# Miscellaneous
 #
 
 # fuck
-
 eval $(thefuck --alias)
-
