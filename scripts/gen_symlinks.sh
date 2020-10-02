@@ -31,7 +31,7 @@ create_config_bak() {
 # Lastly, do the mothafuckin' thing!
 
 ftw() {
-  ln -s ~/code/dotfiles-linux/$1 ~/$1
+  ln -s /mnt/c/Users/sonof/Code/dotfiles-linux/$1 ~/$1
   echo "    \"~/$1\" symlink created!"
 }
 
