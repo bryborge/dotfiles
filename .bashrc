@@ -97,8 +97,13 @@ function get_venv_name_with_color() {
 }
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -d ~/.rbenv ]; then
+	export PATH="$HOME/.rbenv/bin:$PATH"
+	eval "$(rbenv init -)"
+fi
 
 # nodenv
-export PATH="$HOME/.nodenv/bin:$PATH"
+if [ -d ~/.nodenv ]; then
+	export PATH="$HOME/.nodenv/bin:$PATH"
+fi
+
