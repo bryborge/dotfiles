@@ -105,5 +105,6 @@ fi
 # nodenv
 if [ -d ~/.nodenv ]; then
 	export PATH="$HOME/.nodenv/bin:$PATH"
+	eval "$(nodenv init -)"
 fi
 
