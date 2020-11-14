@@ -31,7 +31,3 @@ Currently the process is:
 1.  Create the new file in the root directory of this project
 1.  Add the file to the `start()` method in `scripts/gen_symlinks`
 1.  Run `$ bash scripts/gen_symlinks`
-
-### Configure Atom
-
-There are some configs in `atom_configs` that need to be added manually to the editor.
