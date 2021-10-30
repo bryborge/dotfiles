@@ -15,8 +15,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # Set history length.
-HISTSIZE=1000
-HISTFILESIZE=2000
+export HISTSIZE=100000
+export SAVEHIST=100000
 
 # Check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
