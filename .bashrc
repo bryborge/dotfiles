@@ -96,18 +96,8 @@ function get_venv_name_with_color() {
     fi
 }
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-# nodenv
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
-
-
-##
-# Miscellaneous
-#
-
-# fuck
-eval $(thefuck --alias)
+# asdf
+if [ -f ~/.asdf/bin/asdf ]; then
+    . $HOME/.asdf/asdf.sh
+    . $HOME/.asdf/completions/asdf.bash
+fi
