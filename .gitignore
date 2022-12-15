@@ -1,7 +1,5 @@
-# Jetbrains IDE cache files
 .idea/
-
-# macOS metadata files
+.vscode/
 .DS_Store
 
 # vim read/write history

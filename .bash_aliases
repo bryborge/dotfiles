@@ -1,8 +1,5 @@
 #!/bin/bash
 
-##
-# General
-#
 alias grep='grep --color=auto'
 alias l='ls -CF'
 alias la='ls -A'
